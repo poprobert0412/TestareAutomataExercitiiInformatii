@@ -15,6 +15,9 @@ chrome.find_element(By.XPATH, "//input[@id=\"radio-button-1\"]").click()
 chrome.find_element(By.XPATH, "//input[@id=\"checkbox-1\"]").click()
 chrome.find_element(By.XPATH, "//input[@id=\"datepicker\"]").send_keys("08/29/1999")
 
+site_name = chrome.find_element(By.XPATH, "//input[@id=\"job-title\"]//parent::div//parent::div//parent::form//parent::div//child::nav//following-sibling::h1")
+assert site_name, "Complete Web Form"
+
 drop_down = Select(chrome.find_element(By.XPATH, "//select[@id=\"select-menu\"]"))
 drop_down.select_by_value(value="1")
 job_title = chrome.find_element(By.XPATH, "//input[@id=\"job-title\"]/preceding-sibling::strong/label")
