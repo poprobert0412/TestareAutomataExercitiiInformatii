@@ -49,7 +49,7 @@ class TestAlerts(unittest.TestCase):
         result = self.chrome.find_element(*self.result_text)
         assert result.text == f"You entered: {text}"
 
-    def test_jspromt_cancel(self):
+    def test_jsprompt_cancel(self):
         self.chrome.find_element(*self.js_prompt_button).click()
         self.chrome.switch_to.alert.dismiss()
         result = self.chrome.find_element(*self.result_text)
