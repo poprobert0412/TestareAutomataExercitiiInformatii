@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Tests Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unit Tests Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-08-12 19:15:40</p>
+                <p class='attribute'><strong>Duration: </strong>25.16 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 5, Pass: 3, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Sesiunea_5_Alerte_Suite.alerte.TestAlerts</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_jsalert</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: I am a JS Alert
+Message: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=127.0.6533.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF718739632+30946]
+	(No symbol) [0x00007FF7186EE3C9]
+	(No symbol) [0x00007FF7185E6FDA]
+	(No symbol) [0x00007FF71867B7CC]
+	(No symbol) [0x00007FF71865C813]
+	(No symbol) [0x00007FF71862A6E5]
+	(No symbol) [0x00007FF71862B021]
+	GetHandleVerifier [0x00007FF71886F83D+1301229]
+	GetHandleVerifier [0x00007FF71887BDB7+1351783]
+	GetHandleVerifier [0x00007FF718872A03+1313971]
+	GetHandleVerifier [0x00007FF71876DD06+245686]
+	(No symbol) [0x00007FF7186F758F]
+	(No symbol) [0x00007FF7186F3804]
+	(No symbol) [0x00007FF7186F3992]
+	(No symbol) [0x00007FF7186EA3EF]
+	BaseThreadInitThunk [0x00007FFCF9EC7374+20]
+	RtlUserThreadStart [0x00007FFCFB0DCC91+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\popro\OneDrive\Desktop\TESTARE AUTOMATA 18\Sesiunea_5_Alerte_Suite\alerte.py", line 24, in test_jsalert
+    result = self.chrome.find_element(By.ID, "result")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\popro\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\popro\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\popro\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 228, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: I am a JS Alert
+Message: unexpected alert open: {Alert text : I am a JS Alert}
+  (Session info: chrome=127.0.6533.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF718739632+30946]
+	(No symbol) [0x00007FF7186EE3C9]
+	(No symbol) [0x00007FF7185E6FDA]
+	(No symbol) [0x00007FF71867B7CC]
+	(No symbol) [0x00007FF71865C813]
+	(No symbol) [0x00007FF71862A6E5]
+	(No symbol) [0x00007FF71862B021]
+	GetHandleVerifier [0x00007FF71886F83D+1301229]
+	GetHandleVerifier [0x00007FF71887BDB7+1351783]
+	GetHandleVerifier [0x00007FF718872A03+1313971]
+	GetHandleVerifier [0x00007FF71876DD06+245686]
+	(No symbol) [0x00007FF7186F758F]
+	(No symbol) [0x00007FF7186F3804]
+	(No symbol) [0x00007FF7186F3992]
+	(No symbol) [0x00007FF7186EA3EF]
+	BaseThreadInitThunk [0x00007FFCF9EC7374+20]
+	RtlUserThreadStart [0x00007FFCFB0DCC91+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_jsconfirm_accept</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoAlertPresentException: Message: no such alert
+  (Session info: chrome=127.0.6533.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF718739632+30946]
+	(No symbol) [0x00007FF7186EE3C9]
+	(No symbol) [0x00007FF7185E6E09]
+	(No symbol) [0x00007FF7185D1EF4]
+	(No symbol) [0x00007FF7185FA111]
+	(No symbol) [0x00007FF71860A6C7]
+	(No symbol) [0x00007FF71865CB1D]
+	(No symbol) [0x00007FF71860A54B]
+	(No symbol) [0x00007FF71865C813]
+	(No symbol) [0x00007FF71862A6E5]
+	(No symbol) [0x00007FF71862B021]
+	GetHandleVerifier [0x00007FF71886F83D+1301229]
+	GetHandleVerifier [0x00007FF71887BDB7+1351783]
+	GetHandleVerifier [0x00007FF718872A03+1313971]
+	GetHandleVerifier [0x00007FF71876DD06+245686]
+	(No symbol) [0x00007FF7186F758F]
+	(No symbol) [0x00007FF7186F3804]
+	(No symbol) [0x00007FF7186F3992]
+	(No symbol) [0x00007FF7186EA3EF]
+	BaseThreadInitThunk [0x00007FFCF9EC7374+20]
+	RtlUserThreadStart [0x00007FFCFB0DCC91+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\popro\OneDrive\Desktop\TESTARE AUTOMATA 18\Sesiunea_5_Alerte_Suite\alerte.py", line 29, in test_jsconfirm_accept
+    self.chrome.switch_to.alert.accept()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\popro\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 58, in alert
+    _ = alert.text
+        ^^^^^^^^^^
+  File "C:\Users\popro\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\alert.py", line 58, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\popro\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\popro\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=127.0.6533.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF718739632+30946]
+	(No symbol) [0x00007FF7186EE3C9]
+	(No symbol) [0x00007FF7185E6E09]
+	(No symbol) [0x00007FF7185D1EF4]
+	(No symbol) [0x00007FF7185FA111]
+	(No symbol) [0x00007FF71860A6C7]
+	(No symbol) [0x00007FF71865CB1D]
+	(No symbol) [0x00007FF71860A54B]
+	(No symbol) [0x00007FF71865C813]
+	(No symbol) [0x00007FF71862A6E5]
+	(No symbol) [0x00007FF71862B021]
+	GetHandleVerifier [0x00007FF71886F83D+1301229]
+	GetHandleVerifier [0x00007FF71887BDB7+1351783]
+	GetHandleVerifier [0x00007FF718872A03+1313971]
+	GetHandleVerifier [0x00007FF71876DD06+245686]
+	(No symbol) [0x00007FF7186F758F]
+	(No symbol) [0x00007FF7186F3804]
+	(No symbol) [0x00007FF7186F3992]
+	(No symbol) [0x00007FF7186EA3EF]
+	BaseThreadInitThunk [0x00007FFCF9EC7374+20]
+	RtlUserThreadStart [0x00007FFCFB0DCC91+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_jsconfirm_cancel</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_jsprompt_accept</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_jspromt_cancel</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 5, Pass: 3, Error: 2 -- Duration: 25.16 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
