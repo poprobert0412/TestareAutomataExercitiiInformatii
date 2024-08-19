@@ -1,6 +1,6 @@
-from pages.base_page import BasePage
+from page.base_page import BasePage
 from browser import Browser
-from pages.js_alerts_page import JsAlertsPage
+from page.js_alerts_page import JsAlertsPage
 
 
 def before_all(context):
