@@ -1,6 +1,7 @@
 Feature: Test the javascript alerts
 
-  Background: Given I am on the main page
+  Background:
+    Given I am on the main page
 
   Scenario: Test jsalert button
     #Given I am on the main page

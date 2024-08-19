@@ -1,4 +1,4 @@
-from Sesiunea_6_Intro_To_BDD.browser import Browser
+from browser import Browser
 
 
 class BasePage(Browser):

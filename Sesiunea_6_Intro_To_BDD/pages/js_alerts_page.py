@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from Sesiunea_6_Intro_To_BDD.pages.base_page import BasePage
+from pages.base_page import BasePage
 
 
 class JsAlertsPage(BasePage):
@@ -7,7 +7,6 @@ class JsAlertsPage(BasePage):
     js_confirm_button = (By.XPATH, "//button[@onclick=\"jsConfirm()\"]")
     js_prompt_button = (By.XPATH, "//button[@onclick=\"jsPrompt()\"]")
     result_text = (By.ID, "result")
-
     def click_jsalert_button(self):
         self.chrome.find_element(*self.js_alert_button).click()
 

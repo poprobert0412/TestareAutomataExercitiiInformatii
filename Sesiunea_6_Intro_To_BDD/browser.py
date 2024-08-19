@@ -7,3 +7,6 @@ class Browser:
     chrome = webdriver.Chrome(options=chrome_options)
     #driver.maximize_window()
 
+    def close(self):
+        self.chrome.quit()
+

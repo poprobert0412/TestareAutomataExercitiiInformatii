@@ -1,5 +1,12 @@
 from behave import *
 
+
+@given(u'I am on the main page')
+def step_impl(context):
+    print(u'STEP: Given I am on the main page')
+    context.base_page.navigate_to_main_page()
+
+
 @when(u'I press on the jsalert button')
 def step_impl(context):
     print(u'STEP: When I press on the jsalert button')
