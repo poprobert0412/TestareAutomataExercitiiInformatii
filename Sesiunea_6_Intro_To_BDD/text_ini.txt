@@ -1,0 +1,2 @@
+behave -f html -o behave-report-login.html
+behave --tags=login -f html -o behave-report-login.html
