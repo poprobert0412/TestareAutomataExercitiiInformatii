@@ -51,3 +51,4 @@ def step_impl(context, username, password):
 def step_impl(context):
     print(u'STEP: Then I should see the banner: "Your username is invalid!"')
     context.login_page.username_invalid_banner()
+
